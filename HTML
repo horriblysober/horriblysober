@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>  
-  <h2>Sage Addington's Portfolio</h2>
-  </header>
-<body>
-<p> Introduction to Techniques</p>
-</body>
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 * {
-	box-sizing: border box;
-   }
+  box-sizing: border-box;
+}
+
 body {
-	font-family: Sans-serif;
-    }
-    
-/*Style for the Header*/
-<header>	{
-	background-color: #ffffdf;
-    padding: 30 px;
-    tex-align: center;
-    font-size: 35 px;
-    color: #5f0000;
-  }
-  
-/* Style for the Navigation Box */
+  font-family: sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #ffdfdf;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 30%;
-  height: 300px;
+  height: 700px; /* only for demonstration, should be removed */
   background: #ffdfdf;
   padding: 20px;
 }
 
-/* Style for the list inside the menu */
+/* Style the list inside the menu */
 nav ul {
+  float: left;
+  width: 30%;
+  font-size: 20px;
   list-style-type: none;
-  padding: 04;
+  padding: 0;
+  color: white;
 }
+
 
 article {
   float: left;
   padding: 20px;
   width: 70%;
   background-color: #ffdfdf;
-  height: 300px;
- }
- 
+  height: 700px; /* only for demonstration, should be removed */
+}
+
 /* Clear floats after the columns */
 section:after {
   content: "";
@@ -53,12 +58,12 @@ section:after {
   clear: both;
 }
 
-/* Style for the footer */
+/* Style the footer */
 footer {
   background-color: #ffdfdf;
   padding: 10px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -72,28 +77,42 @@ footer {
 </head>
 <body>
 
+<h2 style= "background-color: #ffdfdf;" >This portfolio is for Introduction to Techniques</h2>
+
 <header>
-<h2>HOME</h2>
+  <h2>YUKKA ART</h2>
+  <p>Sage Addington's Portfolio</p>
 </header>
+
+
 <section>
-	<nav>
-    	<ul>
-        	<li>VIDEOS</li>
-            <li>PHOTOGRAPHS</li>
-		</ul>
-	</nav>
-    
-    <article>
+  <nav>
+    <ul>
+      <li><a href="#">PHOTOGRAPHS</a></li>
+      <li><a href="#">VIDEOS</a></li>
+    </ul>
+  </nav>
+  
+  <article>
     <h1>1 Minute Premier Exercise</h1>
-    <iframe width="420" height="300"
+    <iframe width="220" height="220"
 src="https://www.youtube.com/embed/tgbNymZ7vqY">
 </iframe>
-    <p>This is a music video I made including the music</p>
-    </article>
+
+<h1>Photoshop Exercise</h1>
+    <img src="https://66.media.tumblr.com/8a446efcd73477fc4f511d322f4d1e58/tumblr_pxbylkvuwi1v5u8hgo1_1280.jpg" alt="Hand Shake" width="150" height="100">
+    <img src="https://66.media.tumblr.com/8a446efcd73477fc4f511d322f4d1e58/tumblr_pxbylkvuwi1v5u8hgo1_1280.jpg" alt="Hand Shake" width="150" height="100">
+    <img src="https://66.media.tumblr.com/8a446efcd73477fc4f511d322f4d1e58/tumblr_pxbylkvuwi1v5u8hgo1_1280.jpg" alt="Hand Shake" width="150" height="100">
+    <img src="https://66.media.tumblr.com/8a446efcd73477fc4f511d322f4d1e58/tumblr_pxbylkvuwi1v5u8hgo1_1280.jpg" alt="Hand Shake" width="150" height="100">
+  </article>
 </section>
+ 
+
+	
 
 <footer>
-<p>Follow my Instagram @yukka_art</p>
+  <p>Follow my Instagram @yukka_art</p>
 </footer>
+
 </body>
 </html>
